@@ -1,0 +1,36 @@
+table, th, td
+{
+	 border-radius: 5px;
+	 font-size: 60px;
+	 margin-top : 35px;
+	 margin-left : 0px;
+	
+}	
+#categorii
+{
+	font-size : 30px;
+	margin-left : 10px;
+	margin-bottom : 5px;
+	margin-top : 5px;
+	color : #FFFFFF;
+	 justify-content: center;
+}
+p
+{
+	font-size : 25px;
+	margin-left : 25px;
+	margin-top : 5px;
+	margin-bottom : 5px;
+}	
+#acasa
+{
+	font-size : 30px;
+	margin-left : 10px;
+	margin-bottom : 5px;
+	margin-top : 20px;
+}
+a
+{
+	text-decoration: none;
+	color : #FFFFFF;
+}

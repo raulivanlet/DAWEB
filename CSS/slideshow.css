@@ -1,0 +1,13 @@
+.container
+{
+	margin : auto;
+	width : 60%;
+	padding: 70px 0;
+	
+}
+.mySlides
+{
+	width : 100%;
+	border : 7px solid #ffa31a;
+	border-radius : 5px;
+}
