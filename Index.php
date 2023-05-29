@@ -16,8 +16,8 @@
 
 <FRAMESET cols="15%,*" border="0">
 	
-	<FRAME src="meniu.php">
-	<FRAME src="centru.php" name="centru">
+	<FRAME src="menu.php">
+	<FRAME src="center.php" name="centru">
 
 </FRAMESET>
 

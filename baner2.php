@@ -17,7 +17,7 @@
 </head>
 <body bgcolor="#1b1b1b">
 
-<p class="p1"><marquee behavior="scroll" direction="down">Reduceri ! Reduceri ! Reduceri ! Reduceri ! Reduceri ! Reduceri !</marquee></p>
+<p class="p1"><marquee behavior="scroll" direction="right">Reduceri ! Reduceri ! Reduceri ! Reduceri ! Reduceri ! Reduceri ! Reduceri ! Reduceri ! Reduceri ! Reduceri ! Reduceri ! Reduceri !</marquee></p>
 
 </body>
 

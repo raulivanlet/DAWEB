@@ -2,28 +2,28 @@
 
 include_once('config.php');
 
-$b=$_POST['nume'];
+$id=$_POST['id'];
 
 require_once('config.php');
  
-$cerereSQL = "SELECT cantitate FROM produse WHERE nume='$b' "; 
+$cerereSQL = "SELECT stock FROM products WHERE id='$id' "; 
 $rezultat = mysql_query($cerereSQL); 
  while($rand = mysql_fetch_array($rezultat)) { 
-  $a=$rand['cantitate'];
+  $a=$rand['stock'];
  } 
  
  if($a!=0)
  {
 	$a=$a-1; 
 	
-	$cerereSQL = "UPDATE `produse` SET  cantitate='$a' WHERE nume='$b' "; 
+	$cerereSQL = "UPDATE `products` SET  stock='$a' WHERE id='$id' "; 
 	mysql_query($cerereSQL); 
 	
-	echo '<p class="com">Comanda finalizata</p>';
+	echo '<p class="com">Order completed</p>';
  }
  else
  {
-	 echo '<p class="com">Stoc epuizat</p>';
+	 echo '<p class="com">No stock</p>';
  }
 
 ?>
@@ -53,7 +53,7 @@ a
 
 <body bgcolor="#1b1b1b">
 
-<p class="com"><a href="centru.php">Continua cumparaturile</a></p>
+<p class="com"><a href="center.php">Continue shopping</a></p>
 
 </body>
 
