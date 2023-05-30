@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 
 <head>
@@ -18,6 +21,7 @@
 	font-family: Impact;
 	border : 5px solid #ffa31a;
 	background-color : #ffa31a;
+    border-radius: 25px;
 }
 </style>
 
@@ -50,6 +54,24 @@
     <input class='button' type='submit' name='send' value='RPG'>
     </form>
     </f></p>
+
+    <?php
+
+    if(isset($_SESSION['user_id'])) {
+        if($_SESSION['user_id'] == '3') {
+            echo "<p id='categorii'><b><a href='myprofile.php' target='centru'>Admin Pannel</a></b></p>";
+        }
+        else {
+            echo "<p id='categorii'><b><a href='myprofile.php' target='centru'>My Profile</a></b></p>";
+        }
+    }
+    else {
+        echo "<p id='categorii'><b><a href='login.php' target='centru'>Log In</a></b></p>";
+        echo "<p id='categorii'><b><a href='signup.php' target='centru'>Sign Up</a></b></p>";
+    }
+
+    ?>
+
 </body>
 
 </html>
